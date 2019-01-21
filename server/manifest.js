@@ -65,6 +65,9 @@ module.exports = new Confidence.Store({
                 }
             },
             {
+                plugin: './plugins/swagger'
+            },
+            {
                 plugin: {
                     $filter: { $env: 'NODE_ENV' },
                     $default: 'hpal-debug',
