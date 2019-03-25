@@ -31,7 +31,9 @@ module.exports = new Confidence.Store({
         plugins: [
             {
                 plugin: '../lib', // Main plugin
-                options: {}
+                options: {
+                    jwtKey: process.env.JWT_SECRET
+                }
             },
             {
                 plugin: 'schwifty',
@@ -41,10 +43,13 @@ module.exports = new Confidence.Store({
                     $base: {
                         migrateOnStart: true,
                         knex: {
-                            client: 'sqlite3',
-                            useNullAsDefault: true,     // Suggested for sqlite3
+                            client: 'pg',
+                            useNullAsDefault: true,
                             connection: {
-                                filename: ':memory:'
+                                host: process.env.DB_HOST,
+                                user: process.env.DB_USER,
+                                password: process.env.DB_PASSWORD,
+                                database: process.env.DB_NAME
                             }
                         }
                     },
