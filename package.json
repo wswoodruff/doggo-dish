@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "boom": "7.x.x",
+    "hapi-auth-jwt2": "^8.3.0",
     "haute-couture": "3.x.x",
     "joi": "14.x.x"
   },
