@@ -32,7 +32,13 @@ module.exports = new Confidence.Store({
             {
                 plugin: '../lib', // Main plugin
                 options: {
-                    jwtKey: process.env.JWT_SECRET
+                    jwtKey: process.env.JWT_SECRET,
+                    aws: {
+                        region: process.env.AWS_REGION,
+                        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+                        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+                        s3bucket: process.env.AWS_S3_BUCKET
+                    }
                 }
             },
             {

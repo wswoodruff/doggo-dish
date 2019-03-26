@@ -16,6 +16,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "aws-sdk": "^2.428.0",
     "boom": "7.x.x",
     "hapi-auth-jwt2": "8.x.x",
     "haute-couture": "3.x.x",
@@ -23,7 +24,9 @@
     "objection": "1.x.x",
     "objection-db-errors": "1.x.x",
     "pg": "^7.9.0",
-    "schwifty": "4.x.x"
+    "schmervice": "^1.1.0",
+    "schwifty": "4.x.x",
+    "secure-password": "^3.1.0"
   },
   "peerDependencies": {
     "knex": "0.16.x"
