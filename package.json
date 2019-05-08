@@ -1,6 +1,6 @@
 {
   "name": "doggo-dish",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A server to manage encrypted files, built for use as a 'remote' with doggo-cli",
   "author": "William Woodruff <williamswoodruff@gmail.com>",
   "license": "MIT",
