@@ -13,7 +13,9 @@
     "knex": "knex",
     "start": "node server",
     "test": "lab -a code -I 'core,__core-js_shared__,regeneratorRuntime,_babelPolyfill' -L",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "avocat": "^1.0.1",
@@ -29,7 +31,8 @@
     "pg": "^7.9.0",
     "schmervice": "^1.1.0",
     "schwifty": "4.x.x",
-    "secure-password": "^3.1.0"
+    "secure-password": "^3.1.0",
+    "snyk": "^1.319.0"
   },
   "peerDependencies": {
     "knex": "0.16.x"
@@ -63,5 +66,6 @@
   "bugs": {
     "url": "https://github.com/wswoodruff/doggo-dish/issues"
   },
-  "homepage": "https://github.com/wswoodruff/doggo-dish#readme"
+  "homepage": "https://github.com/wswoodruff/doggo-dish#readme",
+  "snyk": true
 }
