@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "avocat": "^1.0.1",
-    "aws-sdk": "^2.428.0",
+    "aws-sdk": "^2.1354.0",
     "boom": "7.x.x",
     "hapi-auth-jwt2": "8.x.x",
     "haute-couture": "3.x.x",
