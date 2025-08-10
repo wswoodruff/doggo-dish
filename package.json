@@ -28,7 +28,7 @@
     "objection-db-errors": "1.x.x",
     "pg": "^7.9.0",
     "schmervice": "^1.1.0",
-    "schwifty": "4.x.x",
+    "schwifty": "5.0.0",
     "secure-password": "^3.1.0"
   },
   "peerDependencies": {
